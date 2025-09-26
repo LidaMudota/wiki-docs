@@ -1,0 +1,48 @@
+# === OS / IDE мусор ===
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.bak
+/.idea/
+/.vscode/
+
+# === Конфиги окружения, приватное ===
+.env
+debug.log
+*.log
+
+# === Composer / PHP deps ===
+/vendor/
+extensions/*/vendor/
+skins/*/vendor/
+
+# === Node / фронтовые артефакты ===
+node_modules/
+extensions/*/node_modules/
+skins/*/node_modules/
+**/.npm-cache/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# === Инсталлятор MediaWiki и автоген ===
+/mw-config/
+/autoload.php
+/api.php
+
+# === Кэш / временные ===
+/cache/*
+!/cache/.htaccess
+
+# === Загрузка медиа (контент пользователей) ===
+/images/**
+!/images/.htaccess
+!/images/README
+
+# === Отчёты тестов / покрытия ===
+/coverage/
+test-output/
+tests/tmp/
+phpunit.result.cache
